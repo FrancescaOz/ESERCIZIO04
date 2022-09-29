@@ -1,0 +1,327 @@
+/* IMPOSTAZIONI GENERALI */
+@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900 & famiglia= Prata & display=scambio');
+
+body {
+    background-image: url('../img/sfondo.png');
+    background-position: top;
+    background-image: contain;
+    padding: 15px;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* HEADER */
+
+header {
+    width: 50 vw;
+    height: 250px;
+    box-sizing: border-box;
+    margin: 0;
+    text-align: center;
+    background: #006688;
+    background: linear-gradient(#009988, #006688);
+    box-shadow: 10 px #888888 outset;
+    margin-bottom: 20px;
+}
+
+#logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#sottotitolo {
+    text-transform: uppercase;
+    color: #ffff;
+    margin-bottom: 20px;
+
+}
+
+nav {
+    text-align: center;
+    list-style-type: square, inside;
+    text-transform: uppercase;
+
+}
+
+nav ul li {
+    list-style: none;
+    line-height: 1.7em;
+    font-weight: bold;
+    color: #ffff;
+    text-decoration: none;
+}
+
+nav ul li::before {
+    content: "\21D2";
+    color: #ffff;
+}
+
+nav ul li::after {
+    content: "\21D0";
+    color: #ffff;
+}
+
+/*Comportamento dei link*/
+
+nav ul a:link,
+a:visited {
+
+    font-weight: bold;
+    color: #ffff;
+    text-decoration: none;
+}
+
+nav ul,
+a:hover {
+    font-weight: bold;
+    color: #aa2072;
+    text-decoration: none;
+}
+
+/* MAIN */
+
+hr {
+    display: none;
+}
+
+main {
+    background-color: #ffff;
+    box-shadow: 10 px #2c2a2a outset;
+    font-family: 'Poppins', sans-serif;
+    padding-right: 20px;
+
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+article {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 2em;
+    line-height: 1.2em;
+    margin-bottom: 18px;
+    margin-left: 10px;
+    margin-right: 20px;
+
+
+}
+
+#marioRossi {
+    color: grey;
+    margin-bottom: 18px;
+    margin-left: 10px;
+    margin-right: 20px;
+
+}
+
+.testo {
+    font-size: 1.2em;
+    margin-bottom: 18px;
+    margin-left: 10px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+strong {
+    color: #aa2072;
+    font-weight: bold;
+}
+
+article ul li {
+    margin-left: 40px;
+    margin-bottom: 5px;
+}
+
+code {
+    background-color: #eeeedd;
+    border-radius: 5px;
+    border: 1px solid grey;
+    line-height: 0.8px;
+}
+
+h2 {
+    margin-top: 18px;
+    font-size: 1.2em;
+    margin-left: 10px;
+
+}
+
+article ol li {
+    margin-left: 40px;
+    margin-bottom: 5px;
+
+
+}
+
+
+/* TABELLE */
+
+caption {
+    font-weight: bold;
+    font-size: 1.2em;
+    font-style: oblique;
+
+}
+
+table {
+    font-family: "Poppins", sans-serif;
+    border: 1px solid #FFFFFF;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    border-collapse: collapse;
+    border-bottom: #2c2a2a;
+}
+
+thead td,
+th {
+    padding: 3px 2px;
+    width: 50px;
+    height: 75px;
+}
+
+tbody td {
+    font-size: 13px;
+    height: 30px;
+}
+
+tbody tr:nth-child(even) {
+    background: #eeeeee;
+}
+
+thead {
+    background: #0B6FA4;
+    border-bottom: 5px solid #FFFFFF;
+}
+
+thead th {
+    font-size: 1.2em;
+    color: #FFFFFF;
+    text-align: center;
+    border-left: 2px solid #0B6FA4;
+}
+
+thead th:first-child {
+    border-left: none;
+}
+
+tfoot {
+    font-size: 10px;
+    font-weight: bold;
+    color: #333333;
+    background: #D0E4F5;
+    border-top: 3px solid #444444;
+}
+
+tfoot td {
+    font-size: 10px;
+    border-bottom: 2px solid #2c2a2a;
+
+}
+
+p a:link,
+a:visited {
+
+    font-weight: bold;
+    color: #006688;
+    text-decoration: none;
+}
+
+p a:hover {
+    font-weight: bold;
+    color: #aa2072;
+    text-decoration: none;
+}
+
+iframe {
+    border-radius: 40px;
+    width: 100%;
+    
+}
+
+/* FORM */
+section {
+text-align: center;
+background-color:#ddddde;
+margin-right: 10px;
+height: 250px;
+width:100%;
+}
+
+section h2 {
+
+    font-size: 1.5em;
+    font-weight:bold;
+    margin-bottom: 20px;
+    
+}
+
+section p {
+    font-size: medium;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+}
+
+input {
+    border-top:hidden;
+    border-left: hidden;
+    border-right: hidden;
+    border-bottom: 1px dashed;
+    border-color: #444444;
+}
+
+button {
+    background-color: #3366cc;
+    color: #FFFFFF;
+}
+
+
+/* ELEMENTI NELL' ASIDE */
+
+aside h2 
+{
+   text-transform: uppercase;
+   font-weight: bold;
+   margin-top:  20px;
+   margin-bottom: 20px;
+   text-align: center;
+}
+
+aside div {
+    border: 1px solid #333333;
+    background-color: #ddddde;
+    margin-bottom: 20px;
+    
+}
+
+/* FOOTER */
+footer{
+width: 50 vw;
+height: 250px;
+box-sizing: border-box;
+margin: 0;
+text-align: center;
+background: #006688;
+background: linear-gradient(#009988, #006688);
+box-shadow: 10 px #888888 outset;
+margin-bottom: 20px;
+color: #FFFFFF;
+}
+
+footer a:link,
+a:visited {
+
+    font-weight: bold;
+    color: #aa2072;
+    text-decoration: none;
+}
+
+footer a:hover {
+    font-weight: bold;
+    color:#006688 ;
+    text-decoration: none;
+}
