@@ -1,327 +1,237 @@
 /* IMPOSTAZIONI GENERALI */
-@import url('https://fonts.googleapis.com/css2? family= Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200; 1.300;1.400;1.500;1.600;1.700;1.800;1.900 & famiglia= Prata & display=scambio');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 body {
-    background-image: url('../img/sfondo.png');
-    background-position: top;
-    background-image: contain;
-    padding: 15px;
-    vertical-align: baseline;
-    box-sizing: border-box;
+    background-image: url("../img/sfondo.png");
+    background-size: 120%;
+    background-attachment: fixed;
+    background-position: center bottom;
     font-family: 'Poppins', sans-serif;
 }
-
-
-/* HEADER */
-
+/* Intro ------------------------------------- */
 header {
-    width: 50 vw;
-    height: 250px;
+    background: linear-gradient(0deg, #25668e 0%, #3a93b8 100%);
     box-sizing: border-box;
-    margin: 0;
+    box-shadow: 0px 0px 10px #4b4b4b;
+    margin: 1.2em;
     text-align: center;
-    background: #006688;
-    background: linear-gradient(#009988, #006688);
-    box-shadow: 10 px #888888 outset;
-    margin-bottom: 20px;
+    line-height: 1.5em;
+    font-size: 1.1em;
+    padding: 2em;
+    font-weight: 500;
 }
 
-#logo {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-#sottotitolo {
-    text-transform: uppercase;
-    color: #ffff;
-    margin-bottom: 20px;
-
-}
-
-nav {
-    text-align: center;
-    list-style-type: square, inside;
-    text-transform: uppercase;
-
-}
-
-nav ul li {
-    list-style: none;
-    line-height: 1.7em;
-    font-weight: bold;
-    color: #ffff;
+header a:link, header a:visited {
     text-decoration: none;
+    color: white;
 }
 
-nav ul li::before {
-    content: "\21D2";
-    color: #ffff;
-}
-
-nav ul li::after {
-    content: "\21D0";
-    color: #ffff;
-}
-
-/*Comportamento dei link*/
-
-nav ul a:link,
-a:visited {
-
-    font-weight: bold;
-    color: #ffff;
-    text-decoration: none;
-}
-
-nav ul,
-a:hover {
-    font-weight: bold;
-    color: #aa2072;
-    text-decoration: none;
-}
-
-/* MAIN */
-
-hr {
+body > hr {
     display: none;
 }
+/* Lista --------------------------------------*/
+header p, header li {
+    color: white;
+    text-transform: uppercase;
+    list-style-type: none;
+}
 
+header img {
+    height: 6rem;
+}
+
+header p {
+    padding: 0.7rem;
+}
+
+header li:before {
+    content: "\21D2 \2006";
+}
+
+header li:after {
+    content: "\2006 \21D0";
+}
+
+/* MAIN --------------------------------------*/
 main {
-    background-color: #ffff;
-    box-shadow: 10 px #2c2a2a outset;
-    font-family: 'Poppins', sans-serif;
-    padding-right: 20px;
-
+    background: white;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px #4b4b4b;
+    margin: 1.2em;
+    padding: 1.5em;
 }
 
-/* ELEMENTI NEL MAIN - ARTICLE */
-article {
-    font-family: 'Poppins', sans-serif;
-}
-
-h1 {
-    font-weight: bolder;
+main h1 {
     font-size: 2em;
-    line-height: 1.2em;
-    margin-bottom: 18px;
-    margin-left: 10px;
-    margin-right: 20px;
-
-
+    line-height: 1.5em;
+    font-weight: 600;
+    margin-bottom: 0.5em;
 }
 
-#marioRossi {
-    color: grey;
-    margin-bottom: 18px;
-    margin-left: 10px;
-    margin-right: 20px;
-
+.icon {
+    width: 13px;
 }
 
-.testo {
+.marioRossi {
+    color: gray;
+    margin-bottom: 1em;
+}
+/* Liste --------------------------------------*/
+main p, main li, main h2, main caption{
     font-size: 1.2em;
-    margin-bottom: 18px;
-    margin-left: 10px;
-    font-family: 'Poppins', sans-serif;
-
+    line-height: 1.5em;
 }
 
-strong {
-    color: #aa2072;
-    font-weight: bold;
+main strong {
+    color: rgb(167, 0, 167);
 }
 
-article ul li {
-    margin-left: 40px;
-    margin-bottom: 5px;
+main li {
+    list-style-type: disc;
+    margin: 0.3em 1.5em;
+    font-size: 1.1em;
+    text-transform: initial;
+    color: black;
 }
 
-code {
-    background-color: #eeeedd;
+main code {
+    background-color: #e6e6e6;
+    border: 2px solid #8e8e8e;
     border-radius: 5px;
-    border: 1px solid grey;
-    line-height: 0.8px;
+    padding: 2px 0;
 }
 
-h2 {
-    margin-top: 18px;
-    font-size: 1.2em;
-    margin-left: 10px;
-
+main h2 {
+    margin-top: 1em;
+    font-weight: normal;
 }
 
-article ol li {
-    margin-left: 40px;
-    margin-bottom: 5px;
-
-
+main ol {
+    margin: 2em 0;
 }
 
+main ol li {
+    list-style-type: decimal;
+}
 
-/* TABELLE */
-
-caption {
+/* tabella --------------------------------------*/
+main caption {
+    margin-top: 2em;
     font-weight: bold;
-    font-size: 1.2em;
-    font-style: oblique;
-
+    font-style: italic;
 }
 
-table {
-    font-family: "Poppins", sans-serif;
-    border: 1px solid #FFFFFF;
-    width: 300px;
-    height: 200px;
+main th {
+    background-color: #3970dd;
+    padding: 1em;
+    border: 1px solid #ffffff23;
+    color: white;
+    font-weight: normal;
+    vertical-align: bottom;
+}
+
+main tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+main td {
+    padding: 1em;
     text-align: center;
-    border-collapse: collapse;
-    border-bottom: #2c2a2a;
 }
 
-thead td,
-th {
-    padding: 3px 2px;
-    width: 50px;
-    height: 75px;
+main table {
+    border-bottom: 2px solid #3970dd;
+    margin-bottom: 2em;
+}
+/* content --------------------------------------*/
+main a:link, main a:visited {
+    color: #3a93b8;
 }
 
-tbody td {
-    font-size: 13px;
-    height: 30px;
-}
-
-tbody tr:nth-child(even) {
-    background: #eeeeee;
-}
-
-thead {
-    background: #0B6FA4;
-    border-bottom: 5px solid #FFFFFF;
-}
-
-thead th {
-    font-size: 1.2em;
-    color: #FFFFFF;
-    text-align: center;
-    border-left: 2px solid #0B6FA4;
-}
-
-thead th:first-child {
-    border-left: none;
-}
-
-tfoot {
-    font-size: 10px;
-    font-weight: bold;
-    color: #333333;
-    background: #D0E4F5;
-    border-top: 3px solid #444444;
-}
-
-tfoot td {
-    font-size: 10px;
-    border-bottom: 2px solid #2c2a2a;
-
-}
-
-p a:link,
-a:visited {
-
-    font-weight: bold;
-    color: #006688;
-    text-decoration: none;
-}
-
-p a:hover {
-    font-weight: bold;
-    color: #aa2072;
-    text-decoration: none;
-}
-
-iframe {
-    border-radius: 40px;
+main iframe {
     width: 100%;
-    
+    height: 200px;
+    margin: 2em auto;
+    border-radius: 15px;
+}
+/* FORM -----------------------------------------------*/
+main section {
+    background-color: #e6e6e6;
+    padding: 1.5em 1.5em;
 }
 
-/* FORM */
-section {
-text-align: center;
-background-color:#ddddde;
-margin-right: 10px;
-height: 250px;
-width:100%;
+main section h2 {
+    margin: 0;
+    padding-bottom: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+    font-weight: 500;
 }
 
-section h2 {
-
-    font-size: 1.5em;
-    font-weight:bold;
-    margin-bottom: 20px;
-    
+main input {
+    margin: 1em auto;
+    border: none;
+    border-bottom: 1px dashed #000000;
+    width: 70%;
+    padding: 8px 5px;
 }
 
-section p {
-    font-size: medium;
-    line-height: 1.2em;
-    margin-bottom: 10px;
+main button {
+    background-color: #3970dd;
+    padding: 7px 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
 }
-
-input {
-    border-top:hidden;
-    border-left: hidden;
-    border-right: hidden;
-    border-bottom: 1px dashed;
-    border-color: #444444;
-}
-
-button {
-    background-color: #3366cc;
-    color: #FFFFFF;
-}
-
-
 /* ELEMENTI NELL' ASIDE */
-
-aside h2 
-{
-   text-transform: uppercase;
-   font-weight: bold;
-   margin-top:  20px;
-   margin-bottom: 20px;
-   text-align: center;
+aside h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-bottom: 1.3em;
 }
 
-aside div {
-    border: 1px solid #333333;
-    background-color: #ddddde;
-    margin-bottom: 20px;
-    
+.articolo {
+    background-color: #f2f2f2;
+    margin-bottom: 1.2em;
+    border: 2px solid #c9c9c979;
+    padding: 1em;
 }
 
+aside a:link, aside a:visited {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.data {
+    padding-top: 1.5em;
+    font-size: 0.8em;
+    text-align: end;
+}
 /* FOOTER */
-footer{
-width: 50 vw;
-height: 250px;
-box-sizing: border-box;
-margin: 0;
-text-align: center;
-background: #006688;
-background: linear-gradient(#009988, #006688);
-box-shadow: 10 px #888888 outset;
-margin-bottom: 20px;
-color: #FFFFFF;
+footer {
+    background: linear-gradient(0deg, #1e5475 0%, #327e9e 100%);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px #4b4b4b;
+    margin: 1.2em;
+    padding-top: 1em;
+    padding-bottom:  2.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    text-align: center;
+    line-height: 1.3em;
+    color: white;
+    font-size: 1em;
 }
 
-footer a:link,
-a:visited {
-
-    font-weight: bold;
-    color: #aa2072;
-    text-decoration: none;
+footer p {
+    padding-bottom: 1.5em;
 }
 
-footer a:hover {
-    font-weight: bold;
-    color:#006688 ;
-    text-decoration: none;
+footer a:link, footer a:visited {
+    color: magenta;
+    font-style: normal;
+    font-weight: 700;
 }
